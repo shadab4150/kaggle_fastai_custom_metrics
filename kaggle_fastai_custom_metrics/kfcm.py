@@ -149,9 +149,6 @@ class column_mean_logloss(Callback):
     The AUCROC is computed for each target column, 
     and the mean of these values is calculated for the score.
     '''
-    def __init__(self):
-        self.average = 'micro'
-
     def on_epoch_begin(self, **kwargs):
         self.preds = None
         self.target = None
