@@ -195,7 +195,7 @@ def weighted_auc(y_true, y_valid):
         x = np.concatenate([fpr[mask], x_padding])
         y = np.concatenate([tpr[mask], [y_max] * len(x_padding)])
         y = y - y_min # normalize such that curve starts at y=0
-        score = metrics.auc(x, y)
+        score = sklearn.metrics.auc(x, y)
         submetric = score * weight
         best_subscore = (y_max - y_min) * weight
         competition_metric += submetric
@@ -253,16 +253,4 @@ class weighted_mae(Callback):
     def on_epoch_end(self, last_metrics, **kwargs):
         res = sum([sklearn.metrics.mean_absolute_error(self.target[:,i], self.preds[:,i])*self.wgt[i] for i in range(5)])
         return add_metrics(last_metrics, res)
-
-
-
-
-        
-
-
-
-
-
-
-
 
