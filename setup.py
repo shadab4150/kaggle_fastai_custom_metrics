@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'kaggle_fastai_custom_metrics',        
   packages = ['kaggle_fastai_custom_metrics'],  
-  version = '0.1',      
+  version = 'v0.1',      
   license='MIT',        
   description = 'Custom Metrics for fastai v1 for kaggle competitions',  
   author = 'shadab_sayeed',                   
