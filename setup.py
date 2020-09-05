@@ -14,7 +14,7 @@ setup(
           'validators',
           'numpy',
           'pandas',
-          'sklearn',
+          'scikit-learn',
           'scipy',
           'torch',
           'fastai',
