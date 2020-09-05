@@ -3,7 +3,7 @@ setup(
   name = 'kaggle_fastai_custom_metrics',        
   packages = ['kaggle_fastai_custom_metrics'],  
   version = 'v0.1',      
-  license='MIT',        
+  license = 'MIT',        
   description = 'Custom Metrics for fastai v1 for kaggle competitions',  
   author = 'shadab_sayeed',                   
   author_email = 'shadabsayeedxxx@gmail.com',     
@@ -19,7 +19,7 @@ setup(
           'torch',
           'fastai',
       ],
-  classifiers=[
+  classifiers = [
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
     'Intended Audience :: Developers',      # Define that your audience are developers
     'Topic :: Software Development :: Build Tools',
