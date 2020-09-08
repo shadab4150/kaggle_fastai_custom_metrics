@@ -29,23 +29,38 @@ from kaggle_fastai_custom_metrics.kfcm import *
 
 print_all_metrics()
 ```
+<table style="width:100%">
+  <tr>
+    <th>Competition URL</th>
+    <th>Metric</th> 
+  </tr>
+  <tr>
+    <td>https://www.kaggle.com/c/plant-pathology-2020-fgvc7</td>
+    <td>column_mean_logloss</td>
+  </tr>
+  <tr>
+    <td>https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge</td>
+    <td>column_mean_aucroc</td>
+  </tr>
+  <tr>
+    <td>https://www.kaggle.com/c/trends-assessment-prediction</td>
+    <td>weighted_mae</td>
+  </tr>
+   <tr>
+    <td> https://www.kaggle.com/c/alaska2-image-steganalysis</td>
+    <td>alaska_weighted_auc</td>
+  </tr>
+   <tr>
+    <td>https://www.kaggle.com/c/google-quest-challenge</td>
+    <td>AvgSpearman</td>
+  </tr>
+  <tr>
+    <td>https://www.kaggle.com/c/landmark-recognition-2020</td>
+    <td>GAP_vector</td>
+  </tr>
+  <tr>
 
-```
-+------------------------------------------------------------------------+---------------------+
-|                            Competition URL                             |        Metric       |
-+------------------------------------------------------------------------+---------------------+
-|          https://www.kaggle.com/c/plant-pathology-2020-fgvc7           | column_mean_logloss |
-| https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge |  column_mean_aucroc |
-|         https://www.kaggle.com/c/trends-assessment-prediction          |     weighted_mae    |
-|          https://www.kaggle.com/c/alaska2-image-steganalysis           | alaska_weighted_auc |
-|            https://www.kaggle.com/c/google-quest-challenge             |     AvgSpearman     |
-|           https://www.kaggle.com/c/landmark-recognition-2020           |      GAP_vector     |
-+------------------------------------------------------------------------+---------------------+
-```
 ```
 metric = weighted_auc()
 learn = Learner(data, arch, metrics= [metric] )
 ```
-
-
-
