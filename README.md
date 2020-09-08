@@ -11,20 +11,20 @@ Since Metrics are an important part to evaulate your models performance.
 
 ## Installation 
 
-```
+```sh
 pip install kaggle_fastai_custom_metrics
 ```
 
 or
 
-```
+```bash
 git clone https://github.com/shadab4150/kaggle_fastai_custom_metrics
 cd kaggle_fastai_custom_metrics
 pip install .
 ```
 ## Usage :
 
-```
+```python
 from kaggle_fastai_custom_metrics.kfcm import *
 metric = weighted_auc()
 learn = Learner(data, arch, metrics= [metric] )
