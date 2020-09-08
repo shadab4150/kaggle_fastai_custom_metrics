@@ -26,8 +26,6 @@ pip install .
 
 ```python
 from kaggle_fastai_custom_metrics.kfcm import *
-
-print_all_metrics()
 ```
 <table style="width:100%">
   <tr>
@@ -63,4 +61,5 @@ print_all_metrics()
 ```
 metric = weighted_auc()
 learn = Learner(data, arch, metrics= [metric] )
+print_all_metrics()
 ```
