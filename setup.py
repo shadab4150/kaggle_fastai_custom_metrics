@@ -1,10 +1,16 @@
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+
 from distutils.core import setup
 setup(
   name = 'kaggle_fastai_custom_metrics',        
   packages = ['kaggle_fastai_custom_metrics'],  
-  version = 'v0.1',      
+  version = 'v1.0.1',      
   license = 'MIT',        
-  description = 'Custom Metrics for fastai v1 for kaggle competitions',  
+  description = 'Custom Metrics for fastai v1 for kaggle competitions', 
+  long_description = long_description,
+  long_description_content_type="text/markdown",
   author = 'shadab_sayeed',                   
   author_email = 'shadabsayeedxxx@gmail.com',     
   url = 'https://github.com/shadab4150/kaggle_fastai_custom_metrics',  
