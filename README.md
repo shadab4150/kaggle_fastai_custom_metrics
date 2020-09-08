@@ -28,15 +28,21 @@ pip install .
 from kaggle_fastai_custom_metrics.kfcm import *
 
 print_all_metrics()
+```
 
-['column_mean_aucroc',
- 'column_mean_logloss',
- 'weighted_mae',
- 'alaska_weighted_auc',
- 'mask_accuracy',
- 'GAP_vector',
- 'AvgSpearman']
- 
+```
++------------------------------------------------------------------------+---------------------+
+|                            Competition URL                             |        Metric       |
++------------------------------------------------------------------------+---------------------+
+|          https://www.kaggle.com/c/plant-pathology-2020-fgvc7           | column_mean_logloss |
+| https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge |  column_mean_aucroc |
+|         https://www.kaggle.com/c/trends-assessment-prediction          |     weighted_mae    |
+|          https://www.kaggle.com/c/alaska2-image-steganalysis           | alaska_weighted_auc |
+|            https://www.kaggle.com/c/google-quest-challenge             |     AvgSpearman     |
+|           https://www.kaggle.com/c/landmark-recognition-2020           |      GAP_vector     |
++------------------------------------------------------------------------+---------------------+
+```
+```
 metric = weighted_auc()
 learn = Learner(data, arch, metrics= [metric] )
 ```
