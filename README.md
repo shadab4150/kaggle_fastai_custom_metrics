@@ -61,6 +61,6 @@ print_all_metrics()
     </table>
 
 ```
-metric = weighted_auc()
-learn = Learner(data, arch, metrics= [metric] )
+metric = weighted_auc();
+learn = Learner(data, arch, metrics= [metric] );
 ```
