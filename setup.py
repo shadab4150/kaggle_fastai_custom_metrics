@@ -14,7 +14,7 @@ setuptools.setup(
     long_description = long_description,
     long_description_content_type = "text/markdown",
     url = 'https://shadabsayeed.tech/2020-09-08-CustomMetrics/', 
-    download_url = 'https://github.com/shadab4150/kaggle_fastai_custom_metrics/archive/v1.0.1.tar.gz',  
+    download_url = 'https://github.com/shadab4150/kaggle_fastai_custom_metrics/archive/v1.0.2.tar.gz',  
     keywords = ['Fastai', 'Competition Metrics', 'Kaggle'],   
     install_requires=[           
           'validators',
