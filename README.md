@@ -64,3 +64,6 @@ print_all_metrics()
 metric = weighted_auc();
 learn = Learner(data, arch, metrics= [metric] );
 ```
+
+## PyPi
+https://pypi.org/project/kaggle-fastai-custom-metrics/1.0.2/
