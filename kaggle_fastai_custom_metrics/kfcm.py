@@ -1,11 +1,8 @@
 import sklearn 
+from fastai.vision import *
 from scipy.stats import spearmanr
 import numpy as np
 import pandas as pd
-from fastai import *
-from fastai.vision import *
-from fastai.text import *
-from fastai.tabular import *
 import torch
 
 class column_mean_aucroc(Callback):
@@ -254,3 +251,25 @@ class weighted_mae(Callback):
         res = sum([sklearn.metrics.mean_absolute_error(self.target[:,i], self.preds[:,i])*self.wgt[i] for i in range(5)])
         return add_metrics(last_metrics, res)
 
+
+
+
+def print_all_metrics():
+	metrics = {'column_mean_aucroc' : column_mean_aucroc(),
+				'column_mean_logloss' : column_mean_logloss(),
+				'weighted_mae' : weighted_mae(),
+				'alaska_weighted_auc': alaska_weighted_auc(),
+				'mask_accuracy' : mask_accuracy,
+				'GAP_vector' : GAP_vector(),
+				'AvgSpearman' : AvgSpearman()}
+	return list(metrics.keys())
+
+def get_metrics(metric):
+	metrics = {'column_mean_aucroc' : column_mean_aucroc(),
+				'column_mean_logloss' : column_mean_logloss(),
+				'weighted_mae' : weighted_mae(),
+				'alaska_weighted_auc': alaska_weighted_auc(),
+				'mask_accuracy' : mask_accuracy,
+				'GAP_vector' : GAP_vector(),
+				'AvgSpearman' : AvgSpearman()}
+	return metrics[metric]
