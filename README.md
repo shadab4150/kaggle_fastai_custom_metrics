@@ -12,7 +12,7 @@ Since Metrics are an important part to evaulate your models performance.
 ## Installation 
 
 ```sh
-pip install kaggle-fastai-custom-metrics==1.0.1
+pip install kaggle-fastai-custom-metrics==1.0.2
 ```
 
 or
