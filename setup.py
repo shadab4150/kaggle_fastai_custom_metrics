@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name = 'kaggle_fastai_custom_metrics', 
-    version = 'v1.0.1',
+    version = 'v1.0.2',
     packages = ['kaggle_fastai_custom_metrics'], 
     author = 'shadab_sayeed',                   
     author_email = 'shadabsayeedxxx@gmail.com',
