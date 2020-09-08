@@ -255,14 +255,19 @@ class weighted_mae(Callback):
 
 
 def print_all_metrics():
-	metrics = {'column_mean_aucroc' : column_mean_aucroc(),
-				'column_mean_logloss' : column_mean_logloss(),
-				'weighted_mae' : weighted_mae(),
-				'alaska_weighted_auc': alaska_weighted_auc(),
-				'mask_accuracy' : mask_accuracy,
-				'GAP_vector' : GAP_vector(),
-				'AvgSpearman' : AvgSpearman()}
-	return list(metrics.keys())
+    from prettytable import PrettyTable
+    metrics = [['column_mean_logloss','column_mean_aucroc','weighted_mae','alaska_weighted_auc','AvgSpearman','GAP_vector'],
+               ['https://www.kaggle.com/c/plant-pathology-2020-fgvc7',
+                'https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge',
+                'https://www.kaggle.com/c/trends-assessment-prediction',
+                'https://www.kaggle.com/c/alaska2-image-steganalysis','https://www.kaggle.com/c/google-quest-challenge',
+                'https://www.kaggle.com/c/landmark-recognition-2020']]
+    
+    t = PrettyTable(['Competition URL', 'Metric'])
+    for i in range(len(metrics[0])):
+        t.add_row([metrics[1][i],metrics[0][i]])
+    print(t)
+    return 
 
 def get_metrics(metric):
 	metrics = {'column_mean_aucroc' : column_mean_aucroc(),
