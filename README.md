@@ -26,6 +26,17 @@ pip install .
 
 ```python
 from kaggle_fastai_custom_metrics.kfcm import *
+
+print_all_metrics()
+
+['column_mean_aucroc',
+ 'column_mean_logloss',
+ 'weighted_mae',
+ 'alaska_weighted_auc',
+ 'mask_accuracy',
+ 'GAP_vector',
+ 'AvgSpearman']
+ 
 metric = weighted_auc()
 learn = Learner(data, arch, metrics= [metric] )
 ```
