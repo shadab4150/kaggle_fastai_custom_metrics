@@ -14,7 +14,7 @@ setup(
   author = 'shadab_sayeed',                   
   author_email = 'shadabsayeedxxx@gmail.com',     
   url = 'https://github.com/shadab4150/kaggle_fastai_custom_metrics',  
-  download_url = 'https://github.com/shadab4150/kaggle_fastai_custom_metrics/archive/v0.1.tar.gz',  
+  download_url = 'https://github.com/shadab4150/kaggle_fastai_custom_metrics/archive/v1.0.1.tar.gz',  
   keywords = ['Fastai', 'Competition Metrics', 'Kaggle'],   
   install_requires=[           
           'validators',
