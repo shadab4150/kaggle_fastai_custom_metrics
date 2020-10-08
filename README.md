@@ -12,7 +12,7 @@ Since Metrics are an important part to evaulate your models performance.
 ## Installation 
 
 ```sh
-pip install kaggle-fastai-custom-metrics==1.0.2
+pip install kaggle-fastai-custom-metrics
 ```
 
 or
@@ -66,4 +66,4 @@ learn = Learner(data, arch, metrics= [metric] );
 ```
 
 ## PyPi
-https://pypi.org/project/kaggle-fastai-custom-metrics/1.0.2/
+https://pypi.org/project/kaggle-fastai-custom-metrics/
